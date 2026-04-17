@@ -1,0 +1,73 @@
+.gradient-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-semibold);
+  border: none;
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  text-decoration: none;
+  font-family: var(--font-family-base);
+  white-space: nowrap;
+}
+
+/* Variants */
+.gradient-button--primary {
+  background: var(--gradient-primary);
+  color: var(--color-text-white);
+  box-shadow: var(--shadow-md);
+}
+
+.gradient-button--primary:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.gradient-button--primary:active {
+  transform: translateY(0);
+}
+
+.gradient-button--secondary {
+  background: var(--color-bg-light);
+  color: var(--color-text-dark);
+  border: 1px solid var(--color-border);
+}
+
+.gradient-button--secondary:hover {
+  background: var(--color-bg-gray);
+  border-color: var(--color-text-dark);
+}
+
+/* Sizes */
+.gradient-button--xs {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: var(--font-size-xs);
+}
+
+.gradient-button--sm {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-sm);
+}
+
+.gradient-button--md {
+  padding: var(--spacing-md) var(--spacing-lg);
+  font-size: var(--font-size-base);
+}
+
+.gradient-button--lg {
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  font-size: var(--font-size-lg);
+}
+
+.gradient-button--xl {
+  padding: var(--spacing-xl) var(--spacing-3xl);
+  font-size: var(--font-size-xl);
+}
+
+/* Disabled state */
+.gradient-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

@@ -1,0 +1,94 @@
+{
+  "navigation": {
+    "logo": {
+      "src": "/images/logo.svg",
+      "alt": "Grafterr Logo"
+    },
+    "links": [
+      {
+        "label": "Products",
+        "href": "#products"
+      },
+      {
+        "label": "Solutions",
+        "href": "#solutions"
+      }
+    ],
+    "cta": {
+      "label": "Get Started",
+      "href": "#contact"
+    }
+  },
+  "hero": {
+    "headlinePrefix": "Smart",
+    "headlineGradient": "technology provider",
+    "subheadline": "Streamline your restaurant operations with AI-powered point of sale, self-service ordering, and kitchen management systems.",
+    "cta": {
+      "label": "Start Free Trial",
+      "href": "#trial"
+    },
+    "decorativeShapes": {
+      "circle": {
+        "color": "#14B8A6",
+        "size": 200,
+        "position": "top-right"
+      },
+      "rectangle": {
+        "color": "#F97316",
+        "width": 150,
+        "height": 100,
+        "position": "bottom-left"
+      }
+    }
+  },
+  "featuresSection": {
+    "title": "Grow your",
+    "titleAccent": "business",
+    "subtitle": "Comprehensive restaurant management solutions for modern establishments",
+    "products": [
+      {
+        "id": 1,
+        "name": "Point of Sale",
+        "description": "Fast, reliable POS system with integrated payment processing and inventory management.",
+        "image": "/images/pos.jpg",
+        "features": [
+          "Real-time transaction processing",
+          "Multiple payment methods",
+          "Inventory sync"
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Self-service",
+        "description": "Empower customers with intuitive self-ordering kiosks and mobile integration.",
+        "image": "/images/self-service.jpg",
+        "features": [
+          "Touch screen interface",
+          "Menu customization",
+          "Fast checkout"
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Kitchen Management",
+        "description": "Optimize kitchen workflow with real-time order management and staff coordination.",
+        "image": "/images/kitchen.jpg",
+        "features": [
+          "Order tracking",
+          "Staff scheduling",
+          "Quality control"
+        ]
+      }
+    ],
+    "carousel": {
+      "itemsPerView": {
+        "mobile": 1,
+        "tablet": 2,
+        "desktop": 3
+      },
+      "showArrows": true,
+      "autoPlay": false,
+      "transitionDuration": 300
+    }
+  }
+}

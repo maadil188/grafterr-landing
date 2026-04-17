@@ -1,0 +1,24 @@
+.app {
+  width: 100%;
+  min-height: 100vh;
+  background: var(--color-bg-white);
+}
+
+/* Global responsive utilities */
+@media (max-width: 1024px) {
+  .app {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .app {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  .app {
+    font-size: 13px;
+  }
+}

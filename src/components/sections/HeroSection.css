@@ -1,0 +1,120 @@
+.hero {
+  position: relative;
+  padding: var(--spacing-4xl) 0;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(249, 115, 22, 0.05) 100%);
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero--loaded .hero__headline {
+  animation: slideInUp 0.6s ease-out forwards;
+}
+
+.hero--loaded .hero__subheadline {
+  animation: slideInUp 0.6s ease-out forwards;
+  animation-delay: 0.1s;
+}
+
+.hero--loaded .hero__cta {
+  animation: slideInUp 0.6s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+.hero--error {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__container {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__content {
+  max-width: 700px;
+}
+
+.hero__headline {
+  font-size: var(--font-size-6xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.2;
+  margin-bottom: var(--spacing-xl);
+  color: var(--color-text-dark);
+}
+
+.hero__subheadline {
+  font-size: var(--font-size-lg);
+  color: var(--color-text-light);
+  line-height: 1.8;
+  margin-bottom: var(--spacing-2xl);
+  max-width: 550px;
+}
+
+.hero__cta {
+  display: inline-block;
+}
+
+.hero__error-message {
+  text-align: center;
+  padding: var(--spacing-2xl);
+}
+
+.hero__error-message h1 {
+  color: var(--color-text-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.hero__error-message p {
+  color: var(--color-text-light);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .hero {
+    padding: var(--spacing-3xl) 0;
+    min-height: 500px;
+  }
+  
+  .hero__headline {
+    font-size: var(--font-size-5xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: var(--spacing-2xl) 0;
+    min-height: 400px;
+  }
+  
+  .hero__headline {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .hero__subheadline {
+    font-size: var(--font-size-base);
+    margin-bottom: var(--spacing-xl);
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: var(--spacing-xl) 0;
+    min-height: 350px;
+  }
+  
+  .hero__headline {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .hero__subheadline {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-lg);
+  }
+}

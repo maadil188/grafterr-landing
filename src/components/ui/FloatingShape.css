@@ -1,0 +1,74 @@
+.floating-shape {
+  position: absolute;
+  animation: float 6s ease-in-out infinite;
+  opacity: 0.15;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.floating-shape__circle,
+.floating-shape__rectangle {
+  background-color: var(--shape-color);
+  width: var(--shape-size);
+  height: var(--shape-size);
+}
+
+.floating-shape__circle {
+  border-radius: 50%;
+}
+
+.floating-shape__rectangle {
+  border-radius: var(--radius-xl);
+  height: calc(var(--shape-size) * 0.66);
+}
+
+/* Positioning */
+.floating-shape--top-right {
+  top: -100px;
+  right: -100px;
+  animation-delay: 0s;
+}
+
+.floating-shape--bottom-left {
+  bottom: -100px;
+  left: -100px;
+  animation-delay: 1s;
+}
+
+.floating-shape--top-left {
+  top: -80px;
+  left: -80px;
+  animation-delay: 2s;
+}
+
+.floating-shape--bottom-right {
+  bottom: -80px;
+  right: -80px;
+  animation-delay: 1.5s;
+}
+
+.floating-shape--center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-delay: 0.5s;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .floating-shape {
+    opacity: 0.08;
+  }
+  
+  .floating-shape--top-right {
+    top: -50px;
+    right: -50px;
+    --shape-size: 150px;
+  }
+  
+  .floating-shape--bottom-left {
+    bottom: -50px;
+    left: -50px;
+    --shape-size: 120px;
+  }
+}
