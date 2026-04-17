@@ -124,3 +124,4 @@ npm run build
 **Chosen Stack**: React (Option B)  
 **Rationale**: Demonstrates modern component architecture, custom hooks, and best practices for larger applications.
 # grafterr-landing
+# grafterr-landing
