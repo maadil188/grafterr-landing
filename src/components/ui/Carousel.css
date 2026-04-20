@@ -120,13 +120,4 @@
     gap: var(--spacing-sm);
   }
 }
-  
-  .carousel__nav svg {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .carousel__track {
-    gap: var(--spacing-lg);
-  }
-}
+
