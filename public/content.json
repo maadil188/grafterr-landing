@@ -20,31 +20,32 @@
     }
   },
   "hero": {
-    "headlinePrefix": "Smart",
-    "headlineGradient": "technology provider",
-    "subheadline": "Streamline your restaurant operations with AI-powered point of sale, self-service ordering, and kitchen management systems.",
+    "headline": "Looking for a new",
+    "headlineGradient": "technology provider?",
+    "subheadline": "Explore our <b>success stories</b> to see how businesses like yours have transformed with Grafterr's technology.",
     "cta": {
-      "label": "Start Free Trial",
-      "href": "#trial"
+      "label": "Learn more",
+      "href": "#learn-more"
     },
     "decorativeShapes": {
       "circle": {
         "color": "#14B8A6",
-        "size": 200,
-        "position": "top-right"
+        "size": 40,
+        "position": "left"
       },
       "rectangle": {
         "color": "#F97316",
-        "width": 150,
-        "height": 100,
-        "position": "bottom-left"
+        "width": 40,
+        "height": 20,
+        "position": "right"
       }
     }
   },
   "featuresSection": {
-    "title": "Grow your",
-    "titleAccent": "business",
-    "subtitle": "Comprehensive restaurant management solutions for modern establishments",
+    "title": "More ways",
+    "titleAccent": "Grafterr",
+    "titleSuffix": "can help you grow your business",
+    "subtitle": "Explore our success stories to see how businesses like yours have transformed with Grafterr's technology.",
     "products": [
       {
         "id": 1,

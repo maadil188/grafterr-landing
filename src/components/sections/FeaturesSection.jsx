@@ -57,7 +57,7 @@ const FeaturesSection = ({ data, loading, error, onRetry }) => {
           ) : (
             <>
               <h2 className="features__title fade-in">
-                {data?.title} <GradientText>{data?.titleAccent}</GradientText>
+                {data?.title} <GradientText>{data?.titleAccent}</GradientText> {data?.titleSuffix}
               </h2>
               
               <div className="features__subtitle-wrapper">

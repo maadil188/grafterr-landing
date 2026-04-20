@@ -73,10 +73,53 @@
 }
 
 @media (max-width: 768px) {
+  .carousel {
+    padding: 0 var(--spacing-xl);
+  }
+  
   .carousel__nav {
     width: 36px;
     height: 36px;
+    top: 50%;
   }
+  
+  .carousel__nav svg {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .carousel__nav--prev {
+    left: 0;
+  }
+  
+  .carousel__nav--next {
+    right: 0;
+  }
+  
+  .carousel__track {
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    padding: 0 var(--spacing-md);
+  }
+  
+  .carousel__nav {
+    width: 32px;
+    height: 32px;
+  }
+  
+  .carousel__nav svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .carousel__track {
+    gap: var(--spacing-sm);
+  }
+}
   
   .carousel__nav svg {
     width: 20px;

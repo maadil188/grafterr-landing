@@ -4,8 +4,8 @@ import './FloatingShape.css';
 const FloatingShape = ({ 
   type = 'circle', 
   color = '#14B8A6', 
-  size = 200,
-  position = 'top-right'
+  size = 40,
+  position = 'left'
 }) => {
   const style = {
     '--shape-color': color,

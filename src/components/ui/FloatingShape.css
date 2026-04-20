@@ -54,6 +54,18 @@
   animation-delay: 0.5s;
 }
 
+.floating-shape--left {
+  top: 30%;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.floating-shape--right {
+  top: 40%;
+  right: 5%;
+  animation-delay: 1s;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .floating-shape {

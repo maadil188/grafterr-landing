@@ -56,21 +56,22 @@ const HeroSection = ({ data, loading, error, onRetry }) => {
             <>
               <Skeleton width="80%" height="80px" borderRadius="var(--radius-lg)" />
               <Skeleton width="100%" height="24px" borderRadius="var(--radius-md)" count={2} />
-              <Skeleton width="120px" height="48px" borderRadius="var(--radius-lg)" />
+              <Skeleton width="140px" height="48px" borderRadius="var(--radius-lg)" />
             </>
           ) : (
             <>
               <h1 className="hero__headline fade-in">
-                {heroData?.headlinePrefix} <GradientText>{heroData?.headlineGradient}</GradientText>
+                {heroData?.headline} <GradientText>{heroData?.headlineGradient}</GradientText>
               </h1>
               
-              <p className="hero__subheadline slide-in-up">
-                {heroData?.subheadline}
-              </p>
+              <p 
+                className="hero__subheadline slide-in-up" 
+                dangerouslySetInnerHTML={{ __html: heroData?.subheadline }}
+              />
               
               <div className="hero__cta slide-in-up">
-                <GradientButton size="lg" href={heroData?.cta?.href || '#'}>
-                  {heroData?.cta?.label || 'Get Started'}
+                <GradientButton size="md" href={heroData?.cta?.href || '#'}>
+                  {heroData?.cta?.label || 'Learn more'}
                 </GradientButton>
               </div>
             </>
